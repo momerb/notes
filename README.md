@@ -43,6 +43,14 @@ now within the current directory _DIRECTORYNAME_ create an environment <br><br>
 conda create -n _ENVIRONMENTNAME_ python=3.11 numpy pandas datasets matlotlib scikit-learn tqdm anaconda::ipykernel
 ```
 
+Alternatively, you can also do the following in order to save the env folder within the working directory instead of the .conda default path:
+
+```other
+conda create -p ./env python=3.11 numpy pandas matplotlib anaconda::ipykernel
+```
+
+
+
 <br>
 
 ```other
