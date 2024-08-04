@@ -40,7 +40,7 @@ cd _DIRECTORYNAME_
 now within the current directory _DIRECTORYNAME_ create an environment <br><br>
 
 ```other
-conda create -n _ENVIRONMENTNAME_ python=3.11 numpy pandas datasets matlotlib scikit-learn tqdm anaconda::ipykernal
+conda create -n _ENVIRONMENTNAME_ python=3.11 numpy pandas datasets matlotlib scikit-learn tqdm anaconda::ipykernel
 ```
 
 <br>
