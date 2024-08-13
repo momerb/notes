@@ -206,3 +206,9 @@ git add file.csv
 git commit -m "Message"
 git push origin main
 ```
+
+To document the dependencies in an environment.yml file using conda
+
+```other
+conda env export > environment.yml
+```
