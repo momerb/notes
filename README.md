@@ -212,3 +212,47 @@ To document the dependencies in an environment.yml file using conda
 ```other
 conda env export > environment.yml
 ```
+
+Find the path of the command: (This should be the folder where the command exists not the command file itself)
+```sh
+which code
+```
+
+It should show something like this:
+```sh
+/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
+```
+
+Just take the part until bis and add :$PATH as the end so it looks something like this:
+
+```sh
+PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+```
+
+Type the following command to open your .zshrc file in the nano text editor:
+```sh
+nano ~/.zshrc
+```
+
+In the nano editor, navigate to the bottom of the file using the arrow keys.
+Add the following line at the end of the file: (This is not a command but a text to add in the path file in order to make it executable)
+
+```sh
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+```
+
+To save the changes, press Ctrl + O (that's the letter "O", not zero).
+Press Enter to confirm the filename (which should be .zshrc).
+To exit nano, press Ctrl + X
+
+To make the changes take effect immediately, type the following command in the Terminal:
+```sh
+source ~/.zshrc
+```
+This command reloads your .zshrc file, applying the changes you made.
+
+Check if the command is successfully installed in the path:
+```sh
+code --version
+```
+
