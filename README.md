@@ -256,3 +256,26 @@ Check if the command is successfully installed in the path:
 code --version
 ```
 
+#FOR WINDOWS
+
+Install Conda using Windows PowerShell (Administrator)
+
+```PowerShell
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+Start-Process -FilePath ".\miniconda.exe" -ArgumentList "/S" -Wait
+del miniconda.exe
+``` 
+
+Check:
+```PowerShell
+conda --version
+```
+
+If it does not work, then it needs to be added in PATH manually:
+Suchen -> "Umgebungsvariablen" -> Erweitert -> Umgebungsvariablen -> "Benutzervariablen für "BenutzerName" -> Path -> Bearbeiten -> 
+
+```
+1. C:\Users\<BenutzerName>\Miniconda3\Scripts\
+2. C:\Users\<BenutzerName>\Miniconda3\condabin\
+```
+
