@@ -164,6 +164,20 @@ echo "*.csv" >> .gitignore
 
 <br>
 
+<br>
+
+To remove __pycache__/ files from all the subfolders in the current folder
+
+```other
+echo "**/__pycache__/" > .gitignore
+```
+
+<br>
+
+Note: One ">" means to update the current .gitignore file, however two ">>" means overwrite the .gitignore file if it exists
+
+<br>
+
 To add all files to track:
 ```other
 git add --all
@@ -185,6 +199,8 @@ git remote add origin https://github.com/momerb/temporary.git
 git branch -M main
 git push -u origin main
 ```
+
+!!!Git LFS is not very useful in the long run!!!
 
 ```other
 brew install git-lfs
@@ -278,4 +294,3 @@ Suchen -> "Umgebungsvariablen" -> Erweitert -> Umgebungsvariablen -> "Benutzerva
 1. C:\Users\<BenutzerName>\Miniconda3\Scripts\
 2. C:\Users\<BenutzerName>\Miniconda3\condabin\
 ```
-
