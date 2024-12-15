@@ -244,3 +244,14 @@ git push origin main # to upload the current main branch to the origin branch of
 git branch -d BRANCH_NAME #  to delete the newly created branch from the local git -D instead for force delete
 git push origin --delete BRANCH_NAME # to also delete this branch from the remote repo
 ```
+<<<<<<< HEAD
+=======
+
+<br>
+How to pull when there is a conflict between origin and main
+
+```bash
+git pull --rebase # Add the changes from the origin to main in an order as they were made
+git pull --no-rebase # Add the changed from the origin to main BUT at the end of the main
+```
+>>>>>>> aba577e (pull)
