@@ -217,8 +217,30 @@ git lfs track "*.csv"
 git add .gitattributes
 ```
 
-```other
+```bash
 git add file.csv
 git commit -m "Message"
 git push origin main
+```
+
+<br>
+
+##### How to work with a Branch in git?
+
+```bash
+git branch
+git branch BRANCH_NAME # to create a branch
+git checkout BRANCH_NAME | git switch BRANCH_NAME # to switch to the branch
+# make changes in this branch ...
+git add --all
+git commit -m "Message"
+git push origin BRANCH_NAME # to upload to the remote repo
+git checkout main | git switch main # switch to main
+git branch # confirm if you are in the main branch
+git pull origin main # fetch the newest version from the origin branch of the remote repo
+git merge BRANCH_NAME # merge the newly created branch to the main branch
+git status # check the status if everything is okay
+git push origin main # to upload the current main branch to the origin branch of the remote repo
+git branch -d BRANCH_NAME #  to delete the newly created branch from the local git -D instead for force delete
+git push origin --delete BRANCH_NAME # to also delete this branch from the remote repo
 ```
